@@ -1,0 +1,284 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+}
+
+html {
+  font-family: "poppins", sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar img {
+  width: 1em;
+}
+
+.top-bar {
+  display: inline-flex;
+}
+
+.kosong {
+  flex: 8;
+}
+
+.isi {
+  display: inline-flex;
+  flex: 2;
+  justify-content: space-between;
+}
+
+.kosong2 {
+  flex: 1;
+}
+
+.menu-bar {
+  display: flex;
+  position: relative;
+  background-color: #2d2d2d;
+  padding: 0em 5em;
+}
+
+.menu-bar h1 {
+  font-size: 4em;
+  font-family: ;
+}
+
+.menu-bar .non-icon {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: space-between;
+  flex: 5;
+}
+
+.menu-bar .non-icon a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.menu-bar .non-icon img {
+  height: 0.5em;
+}
+
+.menu-bar .non-icon input {
+  width: 60em;
+  padding: 0.8em 2em;
+  margin: 10px 0px;
+  border-radius: 2em;
+  border: none;
+}
+
+.menu-bar .icons {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex: 1;
+}
+
+.icons img,
+.icons input {
+  height: 1.5em;
+}
+
+.offer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: #232323;
+  padding: 0.5em 5em;
+}
+
+.offer-container .offer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bold;
+}
+
+.btn-dark {
+  border: 3px solid white;
+  background-color: #232323;
+  font-weight: bold;
+  border-radius: 0;
+  transition: all 0.8s ease;
+}
+
+.btn-dark:hover {
+  background-color: #232323;
+  color: rgb(168, 168, 168);
+  border: 3px solid rgb(168, 168, 168);
+}
+
+.categories-btn .men {
+  padding: 6px 20px;
+}
+
+.bs-tooltip-auto[x-placement^="bottom"] .arrow::before,
+.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: rgb(250, 250, 250);
+}
+
+.tooltip-arrow,
+.tooltip-inner {
+  background-color: rgb(250, 250, 250);
+  color: #232323;
+  max-width: 700px;
+  letter-spacing: 0.4px;
+  shadow: 6px 6px 20px;
+}
+
+/* main */
+.main-img {
+  width: 100vw;
+  display: flex;
+  position: relative;
+}
+
+.main-img img {
+  min-width: 100vw;
+  display: flex;
+  position: relative;
+  align-items: center;
+  z-index: 0;
+}
+
+.main-img .text,
+.main-img .cat-button {
+  z-index: 2;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  text-align: center;
+  top: 35%;
+  left: 36.5%;
+  color: white;
+}
+
+.text .this-asos {
+  font-weight: 900;
+  font-size: 4em;
+  letter-spacing: 0.05em;
+}
+
+.text .asos-brands {
+  font-weight: 400;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+}
+
+.main-img .cat-button {
+  top: 56%;
+  left: 36%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+.btn-light {
+  font-size: 1.2em;
+  border-radius: 0;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  padding: 10px 30px;
+  transition: all 0.8s ease;
+}
+
+.btn-light:hover {
+  font-size: 1.2em;
+  border-radius: 0;
+  border: 1px solid black;
+  color: white;
+  background-color: black;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  padding: 10px 30px;
+}
+
+.banner {
+  z-index: 3;
+  position: relative;
+  width: 100%;
+  height: 5em;
+  background-color: #232323;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "shipping label";
+}
+
+.banner .shipping {
+  grid-area: shipping;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner .label {
+  grid-area: label;
+}
+
+.banner .shipping img {
+  height: 50px;
+  position: absolute;
+  left: 10%;
+  top: 15%;
+}
+
+.banner .shipping .easy {
+  position: absolute;
+  top: 15%;
+  left: 16%;
+  color: white;
+}
+
+.banner .shipping .more-info a {
+  position: absolute;
+  top: 50%;
+  left: 16%;
+  color: white;
+}
+
+.banner .label img {
+  height: 50px;
+  position: absolute;
+  left: 60%;
+  top: 15%;
+}
+
+.banner .label .discover {
+  position: absolute;
+  top: 15%;
+  left: 64%;
+  color: white;
+}
+
+.banner .label .new {
+  position: absolute;
+  top: 50%;
+  left: 64%;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    visibility: hidden;
+  }
+
+  .main {
+    width: 100vw;
+  }
+}
