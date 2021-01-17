@@ -22,16 +22,34 @@
         <div class="kosong2"></div>
     </div>
     <!-- MENU BAR -->
-    <div class="container-fluid menu-bar">
+    <nav class="container-fluid menu-bar navbar navbar-expand-lg">
         <div class="non-icon">
             <div class="logo">
                 <h1><a href="#"><img src="./images/logo.png" alt="asos"></a></h1>
             </div>
-            <div><a href="#">WOMEN</a></div>
-            <div><a href="#">MEN</a></div>
-            <div class="search-bar-container">
-                <div class="search-bar"><input type="text" placeholder="Search for items, brands and ispirations"></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">WOMEN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MEN</a>
+                    </li>
+
+                </ul>
             </div>
+            <form class="form-inline">
+                <div class="search-bar-container input-group">
+                    <div class="search-bar"><input class="form-control mr-sm-2" type="search"
+                            placeholder="Search for items, brands and ispirations" aria-label="Search">
+                    </div>
+                </div>
+            </form>
+
         </div>
 
         <div class="icons">
@@ -53,7 +71,7 @@
                 </a>
             </div>
         </div>
-    </div>
+    </nav>
 
     <!-- OFFER -->
     <div class="container-fluid offer-container">
